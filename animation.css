@@ -1,0 +1,97 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(-45deg,#329de4,#d8f0fc,#0746f5)
+}
+.container{
+    color: rgb(3, 63, 141);
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 7px solid #fcf9f9;
+    background-color: rgb(154, 188, 231);
+    position: relative;
+    box-shadow: 10px 12px 10px rgb(59, 57, 57);
+}
+#center{
+    left: 46%;
+    top: 44%;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+.clock div{
+    --rotation:0;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+.clock .num1{--rotation:30deg;}
+.clock .num2{--rotation:60deg;}
+.clock .num3{--rotation:90deg;}
+.clock .num4{--rotation:120deg;}
+.clock .num5{--rotation:150deg;}
+.clock .num6{--rotation:180deg;}
+.clock .num7{--rotation:210deg;}
+.clock .num8{--rotation:240deg;}
+.clock .num9{--rotation:270deg;}
+.clock .num10{--rotation:300deg;}
+.clock .num11{--rotation:330deg;}
+
+
+.clock .sechand{
+   position: absolute;
+   transform-origin: top;
+    left: 49.5%;
+    top: 50%;
+    width: 2px;
+    height:80px;
+    background-color: red;
+    transform-origin: top;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.clock .minhand{
+    position: absolute;
+   transform-origin: top;
+    left: 49.5%;
+    top: 50%;
+    width: 4px;
+    height:75px;
+     border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 50px;
+    background-color:black;
+    transform-origin: top;
+    transform: translateX(-50%) rotate(0deg);
+}
+.clock .hourhand{
+    position: absolute;
+    transform-origin: top;
+     left: 49.5%;
+     top: 50%;
+     width: 7px;
+     height:45px;
+     border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 50px;
+     background-color: black;
+     transform-origin: top;
+     transform: translateX(-50%) rotate(0deg);
+}
+
+
